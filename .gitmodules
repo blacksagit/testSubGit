@@ -1,0 +1,8 @@
+[submodule "pruebaGIT"]
+	path = pruebaGIT
+	url = https://github.com/blacksagit/pruebaGIT.git
+	branch = clase2
+[submodule "SENA"]
+	path = SENA
+	url = https://github.com/blacksagit/mcds1562347.git
+	branch = master
