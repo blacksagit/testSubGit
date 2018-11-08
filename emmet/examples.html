@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>&lt;EMMET&gt; Ejemplos</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/emmet_examples.css">
+</head>
+<body>
+	<h1>
+		<img src="img/logo.svg" class="logo-title" />
+		&lt;EMMET&gt; Ejemplos
+	</h1>
+	<div class="container">
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Anidar Elementos ( > )</h2>
+				<section>
+					<div class="example">
+						ul>li>a>img
+					</div>
+					<div class="result">
+<pre>&lt;ul&gt;
+	&lt;li&gt;
+		&lt;a href=""&gt;
+			&lt;img src="" alt=""&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Elementos Hermanos ( + )</h2>
+				<section>
+					<div class="example">
+						section+header+nav
+					</div>
+					<div class="result">
+<pre>&lt;section&gt;&lt;/section&gt;
+&lt;header&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;/nav&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Repetir Elementos ( * )</h2>
+				<section>
+					<div class="example">
+						ul>li*3
+					</div>
+					<div class="result">
+<pre>&lt;ul&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Atributo Clase ( . )</h2>
+				<section>
+					<div class="example">
+						div.contenedor
+					</div>
+					<div class="result">
+						<pre>&lt;div class="contenedor"&gt;&lt;/div&gt;</pre>
+					</div>
+					<div class="example example2">
+						.contenedor2
+					</div>
+					<div class="result">
+						<pre>&lt;div class="contenedor2"&gt;&lt;/div&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Multiples Clases ( . . . )</h2>
+				<section>
+					<div class="example">
+						div.clase1.clase2.clasen
+					</div>
+					<div class="result">
+<pre>&lt;div class="clase1 clase2 clasen"&gt;&lt;/div&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Atributo Identificador ( # )</h2>
+				<section>
+					<div class="example">
+						nav#menu
+					</div>
+					<div class="result">
+<pre>&lt;nav id="menu"&gt;&lt;/nav&gt;</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Adicionar Texto ( { } )</h2>
+				<section>
+					<div class="example">
+						div{Lorem Ipsum Dolor}
+					</div>
+					<div class="result">
+						<pre>&lt;div&gt;Lorem Ipsum Dolor&lt;/div&gt;</pre>
+					</div>
+					<div class="example example2">
+						a{Click Aquí}
+					</div>
+					<div class="result">
+						<pre>&lt;a href=“”&gt;Click Aquí&lt;/a&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Personalizar Atributos ( [ ] )</h2>
+				<section>
+					<div class="example">
+						a[href=www.google.com]
+					</div>
+					<div class="result">
+<pre>&lt;a href="www.google.com"&gt;&lt;/a&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Numeros Consecutivos ( # )</h2>
+				<section>
+					<div class="example">
+						ul>li.num$*3
+					</div>
+					<div class="result">
+<pre>&lt;ul&gt;
+	&lt;li class="num1"&gt;&lt;/li&gt;
+	&lt;li class="num2"&gt;&lt;/li&gt;
+	&lt;li class="num3"&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+					</div>
+					<div class="example example2">
+						section>article.sec$$$*3
+					</div>
+					<div class="result">
+<pre>&lt;section&gt;
+	&lt;article class="sec001"&gt;&lt;/article&gt;
+	&lt;article class="sec002"&gt;&lt;/article&gt;
+	&lt;article class="sec003"&gt;&lt;/article&gt;
+&lt;/section&gt;</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Dirección Números Consecutivos ( @- )</h2>
+				<section>
+					<div class="example">
+						ul>li.num$@-*3
+					</div>
+					<div class="result">
+<pre>&lt;ul&gt;
+	&lt;li class="num3"&gt;&lt;/li&gt;
+	&lt;li class="num2"&gt;&lt;/li&gt;
+	&lt;li class="num1"&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Base Números Consecutivos<br />( @n )</h2>
+				<section>
+					<div class="example">
+						ul>li.num$@3*4
+					</div>
+					<div class="result">
+<pre>&lt;ul&gt;
+	&lt;li class="num3"&gt;&lt;/li&gt;
+	&lt;li class="num4"&gt;&lt;/li&gt;
+	&lt;li class="num5"&gt;&lt;/li&gt;
+	&lt;li class="num6"&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Subir Nivel ( ^ )</h2>
+				<section>
+					<div class="example">
+						section>article>div^p
+					</div>
+					<div class="result">
+<pre>&lt;section&gt;
+	&lt;article&gt;
+		&lt;div&gt;&lt;/div&gt;
+	&lt;/article&gt;
+	&lt;p&gt;&lt;/p&gt;
+&lt;/section&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Agrupar Elementos ( )</h2>
+				<section>
+					<div class="example">
+						(header>nav)(section>article)
+					</div>
+					<div class="result">
+<pre>&lt;header&gt;
+	&lt;nav&gt;&lt;/nav&gt;
+&lt;/header&gt;
+&lt;section&gt;
+	&lt;article&gt;&lt;/article&gt;
+&lt;/section&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Documentos HTML 5 ( html:5 )</h2>
+				<section>
+					<div class="example">
+						html:5
+					</div>
+					<div class="result">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8" /&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="wrapper-example">
+				<h2>Documentos XHTML 1.0 Strict/Transitional ( html:x )</h2>
+				<section>
+					<div class="example">
+						html:xs
+					</div>
+					<div class="result">
+<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html;charset=UTF-8"&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+					</div>
+					<div class="example example2">
+						html:xt
+					</div>
+					<div class="result">
+<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Documentos HTML 4.01 Strict/Transitional ( html:4 )</h2>
+				<section>
+					<div class="example">
+						html:4s
+					</div>
+					<div class="result">
+<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+					</div>
+					<div class="example example2">
+						html:4t
+					</div>
+					<div class="result">
+<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+					</div>
+				</section>
+			</div>
+
+			<div class="wrapper-example">
+				<h2>Generador “Lorem Ipsum”<br />( lorem )</h2>
+				<section>
+					<div class="example">
+						lorem
+					</div>
+					<div class="result">
+<pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facere repellat distinctio ducimus quod, temporibus necessitatibus. Nobis deleniti, totam soluta alias iusto nisi delectus dignissimos minus omnis aspernatur ad nostrum.</pre>
+					</div>
+					<div class="example example2">
+						lorem20
+					</div>
+					<div class="result">
+<pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam odit nemo in vero exercitationem explicabo? Deserunt cumque deleniti illo neque.</pre>
+					</div>
+					<div class="example example2">
+						lorem*5
+					</div>
+					<div class="result">
+<pre>&lt;div&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto, blanditiis placeat culpa dicta dolorum ut consequatur? Ut suscipit quae quisquam amet, sed, officiis voluptas tenetur quam, distinctio ipsum eius.&lt;/div&gt;
+&lt;div&gt;Temporibus perspiciatis maxime placeat magnam, quas culpa atque eaque dolor nobis qui est nesciunt eveniet commodi amet, maiores inventore. Maxime corporis quo repudiandae doloremque modi, nam numquam, ipsa ea animi.&lt;/div&gt;
+&lt;div&gt;Iusto dolorem minus repellendus optio incidunt fugit quia distinctio, quod ex alias veritatis, cupiditate accusantium consequuntur debitis voluptatum maiores molestias eveniet recusandae quasi soluta? Deserunt itaque laborum ad sunt ullam.&lt;/div&gt;
+&lt;div&gt;Voluptates obcaecati nihil sed dignissimos minima reiciendis, necessitatibus nesciunt magnam distinctio sint officiis voluptatibus, odio nostrum quas sequi nobis ullam sit aliquam aspernatur labore numquam qui assumenda, adipisci dolores? Ducimus?&lt;/div&gt;
+&lt;div&gt;Quasi dolore molestias earum libero explicabo placeat aperiam recusandae perferendis, eos beatae molestiae, labore distinctio, corporis vel ducimus qui ratione quis voluptatum ut nobis similique, dignissimos. Quibusdam, quae. Esse, delectus?&lt;/div&gt;</pre>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.result').hide();
+			$('section').on('click', '.example', function(event) {
+				event.preventDefault();
+				$(this).next('.result').slideToggle('slow');
+			});
+		});
+	</script>
+</body>
+</html>
